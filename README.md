@@ -1,1 +1,33 @@
-# HCM-KS26-CNTT1_promptingAI_Session2_TH1
+# Thiết kế prompt để xử lý đoạn email
+```markdow
+Context:Bạn là chuyên viên xử lý dữ liệu nhân sự cấp cao.
+Request:Bạn cần trích xuất các trường(Họ và tên,số điện thoại,email,vị trí ứng tuyển,năm kinh nghiệm,kỹ năng chính).
+Explanation:Dữ liệu cần để import trực tiếp vào data base nên cần làm chính xác 100%.
+Action:
+- Bước 1:Lập ra một bảng gồm các cột họ và tên,số điện thoại,email,vị trí ứng tuyển,năm kinh nghiệm,kỹ năng chính.
+- Bước 2:Lọc ra các thông tin và đưa vào các cột tương ứng.
+
+Tone:Khách quan,chính xác,không thêm thắt văn phong cảm xúc.
+Extras:Xuất ra một bảng Markdow và một file jason:
+VD:
+|Họ và tên|số điện thoại|email|vị trí ứng tuyển|năm kinh nghiệm |kỹ năng chính|
+|:---:|:---:|:---:|
+|Nguyễn Văn A|0999999999|demo@gmail.com|cyber sercurity|2 năm kinh nghiệm|Quản trị hệ thống và mạng máy tính|
+```json
+{
+  "name": "Nguyễn Văn A",
+  "phone": "+84901234567",
+  "email": "a@gmail.com",
+  "position": "Dev",
+  "experience_years": 2,
+  "skills": ["Python", "SQL"]
+}
+```
+Ràng buộc:Không được tự ý thêm thắt hoặc ảo giác các thông tin không có trong email của ứng viên.
+
+Nếu thông tin nào bị thiếu (ví dụ không ghi số điện thoại), phải để giá trị là null trong JSON, không được tự điền bừa.
+
+Chỉ trả về dữ liệu kết quả, nghiêm cấm AI viết thêm các đoạn văn giải thích ở đầu hoặc cuối câu trả lời.
+
+Kiểm tra tính đúng đắn của cấu trúc JSON bằng các công cụ Validate JSON.
+```
