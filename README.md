@@ -30,4 +30,3 @@ Nếu thông tin nào bị thiếu (ví dụ không ghi số điện thoại), p
 Chỉ trả về dữ liệu kết quả, nghiêm cấm AI viết thêm các đoạn văn giải thích ở đầu hoặc cuối câu trả lời.
 
 Kiểm tra tính đúng đắn của cấu trúc JSON bằng các công cụ Validate JSON.
-```
