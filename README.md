@@ -15,17 +15,15 @@ VD:
 |Nguyễn Văn A|0999999999|demo@gmail.com|cyber sercurity|2 năm kinh nghiệm|Quản trị hệ thống và mạng máy tính|
 Và một định dạng json:
 Trích xuất và chuẩn hóa các thông tin sau:
-
-- Họ tên: Chuyển về dạng viết hoa chữ cái đầu (Ví dụ: Nguyễn Văn A).
-
-- Số điện thoại: Chuẩn hóa về định dạng đầu số quốc gia hoặc loại bỏ dấu cách dư thừa.
-
-- Kỹ năng chính: Gom nhóm thành một danh sách không trùng lặp (ví dụ: \['Python', 'SQL', 'FastAPI'\]).
-
-- Trả về định dạng JSON thuần túy theo cấu trúc:
-
-  { "name": "...", "phone": "...", "email": "...", "position": "...", "experience_years": 2, "skills": \[...\] }
-```
+```json
+{
+  "name": "Nguyễn Văn A",
+  "phone": "+84901234567",
+  "email": "a@gmail.com",
+  "position": "Dev",
+  "experience_years": 2,
+  "skills": ["Python", "SQL"]
+}
 Ràng buộc:Không được tự ý thêm thắt hoặc ảo giác các thông tin không có trong email của ứng viên.
 
 Nếu thông tin nào bị thiếu (ví dụ không ghi số điện thoại), phải để giá trị là null trong JSON, không được tự điền bừa.
