@@ -11,7 +11,7 @@ Tone:Khách quan,chính xác,không thêm thắt văn phong cảm xúc.
 Extras:Xuất ra một bảng Markdow:
 VD:
 |Họ và tên|số điện thoại|email|vị trí ứng tuyển|năm kinh nghiệm |kỹ năng chính|
-|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|
 |Nguyễn Văn A|0999999999|demo@gmail.com|cyber sercurity|2 năm kinh nghiệm|Quản trị hệ thống và mạng máy tính|
 Và một định dạng json:
 Trích xuất và chuẩn hóa các thông tin sau:
