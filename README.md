@@ -9,6 +9,7 @@ Action:
 
 Tone:Khách quan,chính xác,không thêm thắt văn phong cảm xúc.
 Extras:Xuất ra một bảng Markdow:
+```
 VD:
 |Họ và tên|số điện thoại|email|vị trí ứng tuyển|năm kinh nghiệm |kỹ năng chính|
 |:---:|:---:|:---:|:---:|:---:|:---:|
